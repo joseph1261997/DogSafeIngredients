@@ -14,7 +14,7 @@
 
         <section class="card">
             <h2>Scansiona barcode</h2>
-            <video id="video" class="video" playsinline></video>
+            <div id="reader" style="width: 320px; max-width: 100%;"></div>
             <div class="row">
                 <button id="startBtn">Avvia scansione</button>
                 <button id="stopBtn" disabled>Stop</button>
@@ -46,6 +46,7 @@
         </section>
     </main>
 
+    <script src="https://unpkg.com/html5-qrcode"></script>
     <script type="module" src="app.js"></script>
 </body>
 
