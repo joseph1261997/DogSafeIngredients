@@ -1,0 +1,85 @@
+body {
+    margin: 0;
+    background: #fafafa;
+}
+
+.wrap {
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 16px;
+    font-family: system-ui, sans-serif;
+}
+
+.card {
+    background: #fff;
+    border: 1px solid #e5e5e5;
+    border-radius: 10px;
+    padding: 12px;
+    margin-bottom: 12px;
+}
+
+.row {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+}
+
+input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+
+button {
+    padding: 10px 12px;
+    border: 1px solid #333;
+    background: #111;
+    color: #fff;
+    border-radius: 8px;
+}
+
+button[disabled] {
+    opacity: .5;
+}
+
+.video {
+    width: 100%;
+    max-height: 320px;
+    background: #000;
+    border-radius: 8px;
+    margin-top: 8px;
+}
+
+.hint,
+.disclaimer {
+    color: #555;
+    font-size: 12px;
+}
+
+.badge {
+    font-weight: 800;
+    padding: 2px 8px;
+    border-radius: 999px;
+    border: 1px solid #ddd;
+}
+
+.badge.OK {
+    color: #0a7a2f;
+    border-color: #0a7a2f;
+}
+
+.badge.ATTENZIONE {
+    color: #a05a00;
+    border-color: #a05a00;
+}
+
+.badge.NO {
+    color: #b00020;
+    border-color: #b00020;
+}
+
+.badge.SCONOSCIUTO {
+    color: #555;
+    border-color: #999;
+}

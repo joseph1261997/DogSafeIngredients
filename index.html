@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="it">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Dog Food Barcode Checker</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <main class="wrap">
+        <h1>Dog Food Barcode Checker</h1>
+
+        <section class="card">
+            <h2>Scansiona barcode</h2>
+            <video id="video" class="video" playsinline></video>
+            <div class="row">
+                <button id="startBtn">Avvia scansione</button>
+                <button id="stopBtn" disabled>Stop</button>
+            </div>
+            <p class="hint">Consenti l’uso della fotocamera. Funziona solo in HTTPS (Vercel OK).</p>
+        </section>
+
+        <section class="card">
+            <h2>Oppure inserisci codice a mano</h2>
+            <div class="row">
+                <input id="codeInput" placeholder="EAN/UPC (es. 8001234567890)" inputmode="numeric" />
+                <button id="searchBtn">Cerca</button>
+            </div>
+        </section>
+
+        <section class="card">
+            <h2>Risultato</h2>
+            <p><b>Stato:</b> <span id="status">—</span></p>
+            <p><b>Codice:</b> <span id="codeOut">—</span></p>
+            <p><b>Prodotto:</b> <span id="nameOut">—</span></p>
+            <p><b>Ingredienti:</b> <span id="ingOut">—</span></p>
+            <p><b>Verdetto:</b> <span id="verdictOut" class="badge">—</span></p>
+            <ul id="reasons"></ul>
+
+            <p class="disclaimer">
+                Questa è una valutazione automatica basata su dati disponibili e regole semplici.
+                Non sostituisce il veterinario.
+            </p>
+        </section>
+    </main>
+
+    <script type="module" src="app.js"></script>
+</body>
+
+</html>
